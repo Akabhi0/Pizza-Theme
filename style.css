@@ -8,3 +8,26 @@ Tags: blog, two-columns, left-sidebar, accessibility-ready, custom-background, c
 
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
+*{
+	margin:0% 0%;
+	padding:0%;
+}
+
+#header{
+	border:1px solid black;
+	width:100%;
+	height:30%;
+}
+
+#body{
+	border:1px solid black;
+	width:100%;
+	height:50%;
+}
+
+#footer{
+	border:1px solid black;
+	width:100%;
+	height:20%;
+}
