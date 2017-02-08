@@ -69,6 +69,39 @@
 		'after_title'   => '</img></a>',
 	) );
 
+	register_sidebar( array(
+		'name' => 'apps widget',//this is used for mobile apps
+		'before_widget' => '<div id="apps">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<a href="" class="widget-title">',
+		'after_title'   => '</img></a>',
+	) );
+	
+	register_sidebar( array(
+		'name' => 'place widget',//this is used for work places
+		'before_widget' => '<div id="place">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<a href="" class="widget-title"><img src="http://localhost/wp-content/uploads/2017/01/love-pointer.png">',
+		'after_title'   => '</img></a>',
+	) );
+	
+	register_sidebar( array(
+		'name' => 'product widget',//this is used for prduct places
+		'before_widget' => '<div id="product">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<a href="" class="widget-title"><img src="http://localhost/wp-content/uploads/2017/01/barcode.png">',
+		'after_title'   => '</img></a>',
+	) );
+	
+	register_sidebar( array(
+		'name' => 'company widget',//this is used for company info places
+		'before_widget' => '<div id="company">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<a href="" class="widget-title"><img src="http://localhost/wp-content/uploads/2017/01/man-with-company.png">',
+		'after_title'   => '</img></a>',
+	) );
+	
+	
     }
 	
 	//this is the action to calling the widget on the wordpress theam

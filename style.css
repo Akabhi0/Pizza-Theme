@@ -17,7 +17,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 #header{
 	width:100%;
 	height:15%;
-	background:url("img/t7.jpg");
+	background:#de951d;
 }
 
 		#logo_pic{
@@ -181,7 +181,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	   padding:0%;
 	   margin:0% 0%;
 	   width:95%;
-	   background:url("img/t6.jpg");
+	   background:#4c5b5c;
    }
    
    #sub_pages ul{
@@ -253,7 +253,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	border:1px solid;
 	height:50%;
 	width:100%;
-	background:url("img/t8.jpg");
+	background:url("img/back.jpg");
 }
 
 #footer1 ul{
@@ -271,7 +271,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
  height:100%;
  border-radius:5%;
  list-style:none;
- border:2px solid #fff;
 }
 
 #footer1 ul li:hover{
@@ -389,13 +388,147 @@ border-radius:5%;
 		  
 #footer #footer2{
 	border:1px solid;
-	height:25%;
+	height:70%;
 	width:100%;
+	background:#4c5b5c;
+	z-index:100;
 }
 
+    #footer2 ul{
+		padding:0%;
+		margin:0% 0%;
+		height:100%;
+		width:100%;
+	}
+	
+	#footer2 #footer_logo {
+		width:100%;
+		height:15%;
+		margin:1% 0%;
+	}
+	
+	#footer2 #apps{
+		width:100%;
+		height:14%;
+		margin:2% 0%;
+	}
+	
+	#footer2 #info{
+		width:100%;
+		height:60%;
+	}
 
+	
+	#footer2 #logo_apps{
+		margin:0.2% 0%;
+		padding:0%;
+	}
+	
+	#apps #logo_apps li{
+		display:inline;
+		margin:0% 0.3%;
+	}
+	
+	#footer2 #footer_logo img{
+		padding:0.3%;
+		margin:0% 0%;
+	}
+	
+	
+	#footer2 #apps a{
+			 margin:0% 0%;
+			 font-size:1.2em;
+			 color:#2aff55;;
+			 padding:0%;
+		}
+		
+	#footer2 #apps a:hover{
+			 margin:0% 0%;
+			 font-size:1.2em;
+			 color:#b1b7ad;
+			 text-decoration:none;
+		}
+	
+    #footer2 #info ul{
+		margin:0% 0%;
+		padding:0%;
+		width:80%;
+		height:100%;
+	}	
+	
+	#footer2 #info li{
+		width:30%;
+		margin:0% 1.5%;
+		float:left;
+		padding:0%;
+		list-style:none;
+		height:100%;
+	}
+	
+	
+	#footer2 #place #palce_work{
+		height:10%;
+	}
+	#footer2 #place #palce_work li{
+       width:100%;
+       padding:0%;
+       margin:0% 0%;
+       color:#fff;
+       cursor:pointer;	   
+	}
+	
+	#footer2 #place #palce_work li:hover{
+			 margin:0% 0%;
+			 color:#b1b7ad;
+		}
+	
+	#footer2 #product #product_our{
+		height:10%;
+	}
+	
+	#footer2 #product #product_our li{
+       width:100%;
+       padding:0%;
+       margin:0% 0%;	   
+	}
+	
+	#footer2 #product #product_our a{
+		color:#fff;
+		text-decoration:none;
+		cursor:pointer;
+	}
+	
+	#footer2 #product #product_our a:hover{
+		 margin:0% 0%;
+		 color:#b1b7ad;
+	}
+	
+	#footer2 #company p{
+		text-align:left;
+		height:10%;
+		width:100%;
+		padding:5%;
+		color:#fff;
+	}
+	
+	#footer2 #company p:hover{
+		 margin:0% 0%;
+		 color:#b1b7ad;
+	}
+	
+	#footer2 #info .widget-title {
+		font-size:1.4em;
+		text-decoration:none;
+		color:#2aff55;
+	}
+
+    #footer2 #info .widget-title:hover{
+		color:#b1b7ad;
+	}
+	
 #footer #footer3{
-	border:1px solid;
-	height:15%;
+	background:#de951d;
+	height:10%;
 	width:100%;
+	list-style:none;
 }
