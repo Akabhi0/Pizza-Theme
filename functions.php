@@ -3,16 +3,17 @@
    function my_scripts_enqueue() {
 	   
 	//this is the code to add style sheet in the wordpress theme
-	wp_enqueue_style( 'style', get_stylesheet_uri(), array(), null );
+	wp_enqueue_style( 'style', get_stylesheet_uri(), array(), null ,'' ,'screen');
 	   
-    wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.js', array('jquery'), NULL, true );
+    wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.js', array('jquery'), '', true );
+	//this is the code to add the javascript file into the wordpress theme
+    wp_enqueue_script( 'script', get_template_directory_uri() . '/js/costom.js', array ( 'jquery' ), '', true);
+	
     wp_register_style( 'bootstrap-css', get_template_directory_uri() . '/css/bootstrap.css', false, NULL, 'all' );
 
     wp_enqueue_script( 'bootstrap-js' );
     wp_enqueue_style( 'bootstrap-css' );
 	
-	//this is the code to add the javascript file into the wordpress theme
-    wp_enqueue_script( 'script', get_stylesheet_directory_uri()  . '/js/js.js', array('jquery'));
     }
 	
     add_action( 'init', 'my_scripts_enqueue' );
@@ -101,6 +102,13 @@
 		'after_title'   => '</img></a>',
 	) );
 	
+	register_sidebar( array(
+		'name' => 'copyright widget',//this is used for company info places
+		'before_widget' => '<div id="copy">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<a href="" class="widget-title">',
+		'after_title'   => '</img></a>',
+	) );
 	
     }
 	
@@ -134,3 +142,22 @@
 
 			// Enable shortcodes in text widgets
 			add_filter('widget_text', 'do_shortcode');
+			
+			
+function rt_menu(){
+ //write menu code //function used regiter_nav_menu('position','string');
+	   register_nav_menu('primary','Top navigation');
+  }
+  // applied action on this function 
+  
+  add_action('init','rt_menu');
+  // after this we have to call the menu in header.php
+  
+   function rt_menu_footer(){
+	  //write menu code //function used regiter_nav_menu('position','string');
+	   register_nav_menu('footer','footer navigation');
+  }
+  // applied action on this function 
+  
+  add_action('init','rt_menu_footer');
+  // after this we have to call the menu in footer.php

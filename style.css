@@ -17,7 +17,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 #header{
 	width:100%;
 	height:15%;
-	background:#de951d;
+	z-index:100;
+	background:#f38630;
 }
 
 		#logo_pic{
@@ -28,110 +29,117 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			float:left;
 		}
 
-        #menu_bar{
-			float:left;
-			width:50%;
-			height:auto;
-			background:red;
-			margin:1.5% 1%;
-			padding:0%;
-			text-align:center;
-		}
-		
-		#menu_bar li{
-			cursor:pointer;
-			float:left;
-			width:25%;
-			display:inline;
+        #header #menu_level{
+			float:right;
+			width:63%;
 			margin:0% 0%;
 			padding:0%;
-			background:blue;
+            list-style: mone;			
+     		}
 			
-		}
-		
-		#menu_bar li a{
-			color:#6d7303;
-			font-family:tahoma;
-			font-size:1.5em;
-			text-decoration:none;
-		}
-		    
-			#menu_list{
-			display:none;
-			position:absolute;
-			width:25%;
-			margin:4.5% 0%;
+		#header #menu_level .menu{
 			padding:0%;
-			 z-index:10;	
+			margin:0% 0%;
+		}
+
+	        .menu > li{
+			float:left;
+			width:15%;
+			margin:0% 0%;
+			padding:1%;
+			cursor:pointer;
+			text-align:center;
+			font:bold;
+			list-style:none;
 			}
 			
-			#menu_list li{
-		    padding:1%;
+			.menu  li a{
+            font-family:tahoma;
+			font-size:1.5em;
+			color:#333;			
+			text-decoration:none;	
+			}
+			
+			.menu  li a:hover{
+				color:#993408;
+			}
+			
+			.sub-menu > li{
+			padding:1%;
 			cursor:pointer;	
 			padding:0%;
-			width:100%;
-			background:red;
+			font-size:1.5em;
+			width:103%;
+			background:#4c5b5c;
+			list-style:none;
 			}
 			
-			#menu_list > li:hover{
+			.sub-menu{
+            padding:0%;
+			margin:0% 0%;
+			position:absolute;
+			width:8%;		
+            display:none;	
+            z-index:10;			
+			}
+			
+		    .sub-menu li a{
+			text-align:center;
+			font-size:80%;
+            padding:0%;
+            margin:0% 0%;			
+			}	
+			
+			.sub-menu > li:hover{
 			background:black;
 			opacity: 0.7;
 			}
-			
-			#menu_list li a{
+
+			.sub-menu > li a{
+			color:white;
 			text-align:center;
-		    color:#fff;
-			font-family:tahoma;
-		    text-decoration:none;
+			text-decoration:none;
 			}
-		      
-			    #menu_sub{
-					display:none;
-					position:absolute;
-					width:100%;
-				    padding:0%;
-				    margin:0% 100%;
-				    float:right;
-				    z-index:10;	
-				}
-				
-				 #menu_sub li{
-					position:relative;
-					width:100%;
-					cursor:pointer;
-					text-align:center;
-					font:bold;
-					z-index:1;
-					font-size:100%;
-					padding:0%;
-					background:blue;
-					margin:0% 1%;
-					list-style:none;
-				}
-				
-				#menu_sub li a{
-					 text-decoration:none;
-                     padding:0%;
-                     margin:0% 0%;
-				}
-				
-				#menu_sub li:hover{
+			
+			.sub-menu .sub-menu{
+				width:100%;
+				padding:0%;
+				margin:0% 100%;
+				float:right;
+				display:none;
+				z-index:10;	
+			}
+			
+	       .sub-menu .sub-menu li {
+			    width:100%;
+				cursor:pointer;
+				text-align:center;
+				font:bold;
+				z-index:1;
+				font-size:100%;
+				padding:0%;
+				background:#4c5b5c;
+				margin:0% 0%;
+				list-style:none;
+		    }
+			
+			.sub-menu .sub-menu li:hover{
 				background:black;
 				opacity:0.7;
-			    }
+			}
 	
-				#menu_sub li a{
-				   text-decoration:none;
-				   padding:0%;
-				   margin:0% 0%;	
-							   
-				}
-				
+	        .sub-menu .sub-menu li a{
+			   text-decoration:none;
+               padding:0%;
+               margin:0% 0%;	
+               			   
+			}		
 		
 #body{
 	border:1px solid black;
 	width:100%;
 	height:auto;
+	margin:0% 0%;
 }
 
 #body ul{
@@ -496,11 +504,13 @@ border-radius:5%;
 		color:#fff;
 		text-decoration:none;
 		cursor:pointer;
+		 font-size:1.0em;
 	}
 	
 	#footer2 #product #product_our a:hover{
 		 margin:0% 0%;
 		 color:#b1b7ad;
+		  font-size:1.0em;
 	}
 	
 	#footer2 #company p{
@@ -509,11 +519,13 @@ border-radius:5%;
 		width:100%;
 		padding:5%;
 		color:#fff;
+		 font-size:1.0em;
 	}
 	
 	#footer2 #company p:hover{
 		 margin:0% 0%;
 		 color:#b1b7ad;
+		 font-size:1.0em;
 	}
 	
 	#footer2 #info .widget-title {
@@ -527,8 +539,52 @@ border-radius:5%;
 	}
 	
 #footer #footer3{
-	background:#de951d;
+	background:#f38630;
 	height:10%;
 	width:100%;
 	list-style:none;
 }
+
+#footer #footer3 #copy{
+	float:left;
+	width:25%;
+	margin:0% 3%;
+	padding:0%;
+}
+
+#footer #footer3 #copy a{
+	color:black;
+	font-size:1.2em;
+}
+
+           #footer #footer3 .menu{
+				float:right;
+				width:45%;
+				margin:0% 0%;
+			}
+			
+			#footer  #footer3 .menu > li{
+			width:15%;
+			margin:0% 0%;
+			padding:0%;
+			cursor:pointer;
+			text-align:center;
+			font:bold;
+			text-decoration:none;
+			}
+
+			#footer .menu li a{
+			text-decoration:none;
+            font-family:tahoma;
+			font-size:1.3em;
+			color:#666;			
+			}
+			
+			#footer .menu li a:hover{
+				color:#993405;
+			}
+			
+			#footer .sub-menu li{
+				display:none;
+			}
+

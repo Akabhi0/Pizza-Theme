@@ -60,10 +60,14 @@
 		   
         </ul>	
 	</li>
+	
 	<li id="footer3"> 
-
+     <?php  if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('copyright widget') ): ?>
+	 <?php endif; ?> 
+	 
+	 <?php wp_nav_menu(array("location"=>"footer")); ?>
 	</li>
- 
+	
     </ul>
     <?php wp_footer(); ?>
    </div>
