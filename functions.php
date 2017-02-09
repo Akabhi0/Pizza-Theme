@@ -48,7 +48,7 @@
 	
     register_sidebar( array(
 		'name'          => 'work widget', //this is the logo and partner widget 
-		'before_widget' => '<div>',
+		'before_widget' => '<div id="partner">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<a href=" " class="widget-title"><img src="http://localhost/wp-content/uploads/2017/02/handshake.png">',
 		'after_title'   => '</img></a>',

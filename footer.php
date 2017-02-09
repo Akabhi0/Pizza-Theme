@@ -3,12 +3,12 @@
 	<li id="footer1">
           <center><ul id="widget">
 	              <li id="footer_news">
-				    <div><a href="" class="widget-title"><img src="http://localhost/wp-content/uploads/2017/02/news.png">Recent News</a></div>
+				    <div id="jquery_news"><a href="" class="widget-title"><img src="http://localhost/wp-content/uploads/2017/02/news.png">Recent News</a></div>
                     <?php  if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('news widget') ): ?>
 	                <?php endif; ?>				  
 			      </li>
 				  
-				  <li>
+				  <li id="footer_work">
                   <?php  if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('work widget') ): ?>
 	              <?php endif; ?>		  
 			      </li>
