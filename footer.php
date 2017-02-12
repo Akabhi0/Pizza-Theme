@@ -3,7 +3,7 @@
 	<li id="footer1">
           <center><ul id="widget">
 	              <li id="footer_news">
-				    <div id="jquery_news"><a href="" class="widget-title"><img src="http://localhost/wp-content/uploads/2017/02/news.png">Recent News</a></div>
+				    <div id="jquery_news"><a href="" class="widget-title"><img src="http://localhost/wp-content/uploads/2017/01/news.png">Recent News</a></div>
                     <?php  if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('news widget') ): ?>
 	                <?php endif; ?>				  
 			      </li>
@@ -28,7 +28,7 @@
         <ul>	    
 	       <li id="footer_logo"> 
             <!--this is the code for costimzable footer logo-->
-	        <center><img src="<?php $custom_logo_id = 41;/*41 is the id of the logo */
+	        <center><img src="<?php $custom_logo_id = 260;/*41 is the id of the logo */
                         $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
                         echo $image[0]; ?>" /></center>
 		   </li>
@@ -62,10 +62,11 @@
 	</li>
 	
 	<li id="footer3"> 
+	
      <?php  if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('copyright widget') ): ?>
 	 <?php endif; ?> 
 	 
-	 <?php wp_nav_menu(array("location"=>"footer")); ?>
+	 <?php  wp_nav_menu(array("theme_location"=>"foot-menu")); ?>
 	</li>
 	
     </ul>

@@ -23,6 +23,22 @@
     //adding thumbmail for images
     add_theme_support( 'post-thumbnails' );	
 	
+	
+	//this is the code for the adding multiple menus			
+	
+    function register_my_menus(){
+    //write menu code //function used regiter_nav_menu('position','string');	
+	register_nav_menus( array(
+	//header menu
+	 'header-menu' => __( 'Header Menu' ),
+     'foot-menu' => __( 'Footer Menu' )
+    ) );
+    }
+
+    add_action('init','register_my_menus');
+			
+  
+	
    //we are going to make theam logo costom
    function theme_prefix_setup() {
 
@@ -50,7 +66,7 @@
 		'name'          => 'work widget', //this is the logo and partner widget 
 		'before_widget' => '<div id="partner">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<a href=" " class="widget-title"><img src="http://localhost/wp-content/uploads/2017/02/handshake.png">',
+		'before_title'  => '<a href=" " class="widget-title"><img src="http://localhost/wp-content/uploads/2017/01/handshake.png">',
 		'after_title'   => '</img></a>',
 	) );	
 		
@@ -58,7 +74,7 @@
 		'name'          => 'offer widget', //this is the security and privacy widget 
 		'before_widget' => '<div id="page">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<a class="widget-title" href=""><img src="http://localhost/wp-content/uploads/2017/02/mug.png">',
+		'before_title'  => '<a class="widget-title" href=""><img src="http://localhost/wp-content/uploads/2017/01/mug.png">',
 		'after_title'   => '</img></a>',
 	) );
 	
@@ -66,7 +82,7 @@
 		'name' => 'social widget',//this is used for stay in touch
 		'before_widget' => '<div id="stay">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<a href="" class="widget-title"><img src="http://localhost/wp-content/uploads/2017/02/team.png">',
+		'before_title'  => '<a href="" class="widget-title"><img src="http://localhost/wp-content/uploads/2017/01/team.png">',
 		'after_title'   => '</img></a>',
 	) );
 
@@ -144,20 +160,3 @@
 			add_filter('widget_text', 'do_shortcode');
 			
 			
-function rt_menu(){
- //write menu code //function used regiter_nav_menu('position','string');
-	   register_nav_menu('primary','Top navigation');
-  }
-  // applied action on this function 
-  
-  add_action('init','rt_menu');
-  // after this we have to call the menu in header.php
-  
-   function rt_menu_footer(){
-	  //write menu code //function used regiter_nav_menu('position','string');
-	   register_nav_menu('footer','footer navigation');
-  }
-  // applied action on this function 
-  
-  add_action('init','rt_menu_footer');
-  // after this we have to call the menu in footer.php

@@ -14,7 +14,7 @@
 
 	  <!--this is the frame work of two level drop down -->
 	  <div id="menu_level">
-	     <?php wp_nav_menu(array("location"=>"primary")); ?>
+	     <?php  wp_nav_menu(array("theme_location"=>"header-menu")); ?>
 	  </div>
 	  
    </div>
