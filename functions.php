@@ -5,11 +5,11 @@
 	//this is the code to add style sheet in the wordpress theme
 	wp_enqueue_style( 'style', get_stylesheet_uri(), array(), null ,'' ,'screen');
 	   
-    wp_register_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.js', array('jquery'), '', true );
+    wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/js/bootstrap.js', array('jquery'), '', true );
 	//this is the code to add the javascript file into the wordpress theme
     wp_enqueue_script( 'script', get_template_directory_uri() . '/js/costom.js', array ( 'jquery' ), '', true);
 	
-    wp_register_style( 'bootstrap-css', get_template_directory_uri() . '/css/bootstrap.css', false, NULL, 'all' );
+    wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/css/bootstrap.css', false, NULL, 'all' );
 
     wp_enqueue_script( 'bootstrap-js' );
     wp_enqueue_style( 'bootstrap-css' );
@@ -66,15 +66,15 @@
 		'name'          => 'work widget', //this is the logo and partner widget 
 		'before_widget' => '<div id="partner">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<a href=" " class="widget-title"><img src="http://localhost/wp-content/uploads/2017/01/handshake.png">',
+		'before_title'  => '<a href=" " class="widget-title"><img src="http://localhost/wordpress/wp-content/uploads/2017/01/handshake.png">',
 		'after_title'   => '</img></a>',
 	) );	
-		
+		http://localhost/wordpress/wp-content/uploads/2017/01/team.png
 	register_sidebar( array(
 		'name'          => 'offer widget', //this is the security and privacy widget 
 		'before_widget' => '<div id="page">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<a class="widget-title" href=""><img src="http://localhost/wp-content/uploads/2017/01/mug.png">',
+		'before_title'  => '<a class="widget-title" href=""><img src="http://localhost/wordpress/wp-content/uploads/2017/01/mug.png">',
 		'after_title'   => '</img></a>',
 	) );
 	
@@ -82,7 +82,7 @@
 		'name' => 'social widget',//this is used for stay in touch
 		'before_widget' => '<div id="stay">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<a href="" class="widget-title"><img src="http://localhost/wp-content/uploads/2017/01/team.png">',
+		'before_title'  => '<a href="" class="widget-title"><img src="http://localhost/wordpress/wp-content/uploads/2017/01/team.png">',
 		'after_title'   => '</img></a>',
 	) );
 
@@ -98,7 +98,7 @@
 		'name' => 'place widget',//this is used for work places
 		'before_widget' => '<div id="place">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<a href="" class="widget-title"><img src="http://localhost/wp-content/uploads/2017/01/love-pointer.png">',
+		'before_title'  => '<a href="" class="widget-title"><img src="http://localhost/wordpress/wp-content/uploads/2017/01/love-pointer.png">',
 		'after_title'   => '</img></a>',
 	) );
 	
@@ -106,7 +106,7 @@
 		'name' => 'product widget',//this is used for prduct places
 		'before_widget' => '<div id="product">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<a href="" class="widget-title"><img src="http://localhost/wp-content/uploads/2017/01/barcode.png">',
+		'before_title'  => '<a href="" class="widget-title"><img src="http://localhost/wordpress/wp-content/uploads/2017/01/barcode.png">',
 		'after_title'   => '</img></a>',
 	) );
 	
@@ -114,7 +114,7 @@
 		'name' => 'company widget',//this is used for company info places
 		'before_widget' => '<div id="company">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<a href="" class="widget-title"><img src="http://localhost/wp-content/uploads/2017/01/man-with-company.png">',
+		'before_title'  => '<a href="" class="widget-title"><img src="http://localhost/wordpress/wp-content/uploads/2017/01/man-with-company.png">',
 		'after_title'   => '</img></a>',
 	) );
 	
@@ -158,5 +158,18 @@
 
 			// Enable shortcodes in text widgets
 			add_filter('widget_text', 'do_shortcode');
-			
-			
+
+/////////////////////////////////////////////////////////////////////
+//function is used for the different css pages
+
+   function register_more_stylesheets() {
+    wp_register_style( 'stylesheet_name', get_stylesheet_directory_uri() . '/stylesheet.css' );
+    }
+	
+    function add_my_stylesheet() {
+    if ( is_page('feedback') ) // using page slug
+    wp_enqueue_style( 'stylesheet_name' );  // no brackets needed for one line and no else
+    }
+
+    add_action( 'wp_enqueue_scripts', 'add_my_stylesheet' );
+	add_action( 'init', 'register_more_stylesheets' ); 
