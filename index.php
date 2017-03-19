@@ -14,7 +14,7 @@
 					
 				  </ol>
 				  <div class="carousel-inner" role="listbox">
-                <?php if(have_posts() == 315 || 188 || 191 ) : while (have_posts()) : the_post(); $i++;  ?>
+                <?php if(have_posts()) : while (have_posts()) : the_post(); $i++;  ?>
 				<?php if($i == 1) { ?>
 				  <!-- Wrapper for slides -->
 					<div class="item active">

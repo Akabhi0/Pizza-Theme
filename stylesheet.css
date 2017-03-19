@@ -68,7 +68,20 @@
 /*---------------------------------------------------------*/ 
 /*the code of css for category-news is going to over here */	 
 /*---------------------------------------------------------*/
-
-#news{
+#news_id{
 	height:50%;
+	background:#de951d;
+	width:80%;
+	opacity:0.9;
+	margin:2% 12%;
+    border-radius:5%;	
+}
+
+#news_id h3{
+	padding:3%;
+	text-align:center;
+}
+
+#news_id h1{
+	padding:3%;
 }

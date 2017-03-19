@@ -492,10 +492,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	#footer2 #place #palce_work li{
        width:100%;
        padding:0%;
-       margin:2% 0%;
+       margin:1% 0%;
        color:#fff;
-       cursor:pointer;
-       height:90%;	   
+       cursor:pointer;  
 	}
 	
 	#footer2 #place #palce_work li:hover{
@@ -504,14 +503,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		}
 	
 	#footer2 #product #product_our{
-		height:15%;
+		height:10%;
 	}
 	
 	#footer2 #product #product_our li{
        width:100%;
        padding:0%;
-       margin:2% 0%;
-       height:90%;		   
+       margin:1% 0%;
 	}
 	
 	#footer2 #product #product_our a{
@@ -610,11 +608,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /*the code of css for page is going to started here */	 
 /*---------------------------------------------------------*/
 
-#body_page{
-	border:1px solid;
-	width:100%;
-	height:auto;
+#all_page{
 	background:url("img/t6.jpg");
+	padding:0% 0%;
+	margin:0%;
 }
 
 #page_data{
@@ -628,4 +625,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /*---------------------------------------------------------*/ 
 /*the code of css for page is going to over here */	 
+/*---------------------------------------------------------*/
+
+/*---------------------------------------------------------*/ 
+/*the code of css for category is going to started here */	 
+/*---------------------------------------------------------*/
+#category{
+	background:url("img/t6.jpg");
+	padding:0% 0%;
+	margin:0%;
+}
+
+
+/*---------------------------------------------------------*/ 
+/*the code of css for category is going to over here */	 
 /*---------------------------------------------------------*/
