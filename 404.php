@@ -1,6 +1,4 @@
 <?php
-
-
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -20,5 +18,3 @@ get_header(); ?>
 
 		</main><!-- .site-main -->
 	</div><!-- .content-area -->
-
-<?php get_footer(); ?>

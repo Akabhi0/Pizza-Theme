@@ -167,9 +167,22 @@
     }
 	
     function add_my_stylesheet() {
-    if ( is_page('feedback') ) // using page slug
-    wp_enqueue_style( 'stylesheet_name' );  // no brackets needed for one line and no else
+    if ( is_page('feedback') ) // using feedback page slug
+        wp_enqueue_style( 'stylesheet_name' );  // no brackets needed for one line and no else
+	if ( is_page('breakfast') ) //using breakfast page slug
+        wp_enqueue_style( 'stylesheet_name' );
+	if ( is_category('news') )  //using breakfast news slug
+        wp_enqueue_style( 'stylesheet_name' );
     }
 
     add_action( 'wp_enqueue_scripts', 'add_my_stylesheet' );
 	add_action( 'init', 'register_more_stylesheets' ); 
+/////////////////////////////////////////////////////////////////////
+
+/* Includes PHP files located in 'lib' folder */
+   // include(get_template_directory() . '/lib/page-feedback.php');
+	//require_once( $lib_filename );
+    
+	
+	
+	

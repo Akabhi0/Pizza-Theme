@@ -1,5 +1,5 @@
 /*
-Theme Name: PIZZA THEME
+Theme Name: pizza_theme
 Author: ABHISHEK ABHI
 Description: Our 2017 default theme is clean, blog-focused, and designed for clarity.simple-theme, straightforward typography is readable on a wide variety of screen sizes, and suitable for multiple languages. We designed it using a mobile-first approach, meaning your content takes center-stage, regardless of whether your visitors arrive by smartphone, tablet, laptop, or desktop computer.
 Version: 1.0
@@ -492,9 +492,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	#footer2 #place #palce_work li{
        width:100%;
        padding:0%;
-       margin:1% 0%;
+       margin:2% 0%;
        color:#fff;
-       cursor:pointer;	   
+       cursor:pointer;
+       height:90%;	   
 	}
 	
 	#footer2 #place #palce_work li:hover{
@@ -503,26 +504,27 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		}
 	
 	#footer2 #product #product_our{
-		height:10%;
+		height:15%;
 	}
 	
 	#footer2 #product #product_our li{
        width:100%;
        padding:0%;
-       margin:2% 0%;	   
+       margin:2% 0%;
+       height:90%;		   
 	}
 	
 	#footer2 #product #product_our a{
 		color:#fff;
 		text-decoration:none;
 		cursor:pointer;
-		 font-size:1.0em;
+		font-size:1.0em;
 	}
 	
 	#footer2 #product #product_our a:hover{
 		 margin:0% 0%;
 		 color:#b1b7ad;
-		  font-size:1.0em;
+		 font-size:1.0em;
 	}
 	
 	#footer2 #company p{
@@ -531,7 +533,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		width:100%;
 		padding:5%;
 		color:#fff;
-		 font-size:1.0em;
+		font-size:1.0em;
 	}
 	
 	#footer2 #company p:hover{
@@ -599,4 +601,31 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			#footer .sub-menu li{
 				display:none;
 			}
+/*---------------------------------------------------------*/ 
+/*the code of css for footer is going to over here */	 
+/*---------------------------------------------------------*/
 
+
+/*---------------------------------------------------------*/ 
+/*the code of css for page is going to started here */	 
+/*---------------------------------------------------------*/
+
+#body_page{
+	border:1px solid;
+	width:100%;
+	height:auto;
+	background:url("img/t6.jpg");
+}
+
+#page_data{
+	height:35%;
+	background:#de951d;
+	opacity:0.9;
+	width:50%;
+	margin:3% 23%;
+	border-radius:5%;
+}
+
+/*---------------------------------------------------------*/ 
+/*the code of css for page is going to over here */	 
+/*---------------------------------------------------------*/

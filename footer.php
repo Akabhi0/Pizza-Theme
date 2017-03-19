@@ -3,7 +3,7 @@
 	<li id="footer1">
           <center><ul id="widget">
 	              <li id="footer_news">
-				    <div id="jquery_news"><a href="" class="widget-title"><img src="http://localhost/wp-content/uploads/2017/01/news.png">Recent News</a></div>
+				    <div id="jquery_news"><a href="" class="widget-title"><img src="http://localhost/wordpress/wp-content/uploads/2017/01/news.png">Recent News</a></div>
                     <?php  if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('news widget') ): ?>
 	                <?php endif; ?>				  
 			      </li>
