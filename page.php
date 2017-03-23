@@ -7,8 +7,9 @@
 	 $postid = get_the_ID();
         if(is_page($post_page)){
 			include("lib/page-all.php");
-	 }else{
+	    }	
 	  ?>
-	
-		  <?php  } get_footer(); ?><!--this is the vode for adding the footer section in our body or index.php-->
+		  <?php   get_footer(); ?><!--this is the vode for adding the footer section in our body or index.php-->
    </body>
+   
+   

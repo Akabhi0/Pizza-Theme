@@ -640,3 +640,80 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /*---------------------------------------------------------*/ 
 /*the code of css for category is going to over here */	 
 /*---------------------------------------------------------*/
+
+/*---------------------------------------------------------*/
+/*the code for the css of the perticular pages */
+/*---------------------------------------------------------*/
+
+#breakfast{
+	height:35%;
+	background:#de951d;
+	opacity:0.9;
+	width:50%;
+	margin:3% 23%;
+	border-radius:5%;
+	
+}
+
+#feedback_area{
+	padding:3%;
+}
+#comments{
+	display:none;
+}
+
+#feedback_area a{
+    color:#fff;
+	font-size:1.1em;
+}
+
+#feedback_area h3{
+	  color:#fff;
+}
+#feedback_area p{
+	  color:#000;
+	  font-size:1.3em;
+}
+#feedback_area .commentlist{
+	float:right;
+	background:#de951d;
+	border-radius:5%;
+	opacity:0.8;
+	width:30%;
+}
+
+#feedback_area .commentlist li{
+	padding:2%;
+}
+
+#feedback_area #respond{
+	width:60%;
+}
+#feedback_area #comment{
+	width:80%;
+}
+
+.nocomments{
+	display:none;
+}
+
+/*---------------------------------------------------------*/ 
+/*the code of css for category-news is going to over here */	 
+/*---------------------------------------------------------*/
+#news_id{
+	height:50%;
+	background:#de951d;
+	width:80%;
+	opacity:0.9;
+	margin:2% 12%;
+    border-radius:5%;	
+}
+
+#news_id h3{
+	padding:3%;
+	text-align:center;
+}
+
+#news_id h1{
+	padding:3%;
+}

@@ -3,8 +3,9 @@
 <body id="category" >
 
 <?php
-    if( is_category("news") ){
-	    include("lib/category-news.php"); 
+    // This is the code for finding the category id and after that it include category-news.php
+    if( is_category(the_category_ID()) ){
+	    include("lib/category-all.php"); 
     }
 ?>
 
