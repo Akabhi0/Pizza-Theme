@@ -24,13 +24,16 @@
 			      </li>	  
 	              </ul></center>
 	</li>
-	<li id="footer2">
+	<li id="footer2" style="background:#4c5b5c;">
         <ul>	    
 	       <li id="footer_logo"> 
             <!--this is the code for costimzable footer logo-->
-	        <center><img src="<?php $custom_logo_id = 260;/*41 is the id of the logo */
-                        $image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
-                        echo $image[0]; ?>" /></center>
+	        <center>
+			 <!--thih is the code part where we write the costimze code for logo-->
+	         <?php	if ( function_exists( 'the_custom_logo' ) ) {
+                the_custom_logo();
+             }?>
+			</center>
 		   </li>
 		   
 		   <li id="apps"> 
@@ -61,12 +64,13 @@
         </ul>	
 	</li>
 	
-	<li id="footer3"> 
+	<li id="footer3" style="background:#f38630;" > 
 	
-     <?php  if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('copyright widget') ): ?>
-	 <?php endif; ?> 
+	  <a class="lead" href="<?php echo esc_url( __( 'https://techtec.in/', 'pizza theme' ) ); ?>">
+	  <?php printf( __( 'copyright &copy resvered design by %s', 'pizza theme' ), 'A.K.Abhi' ); ?></a>
 	 
 	 <?php  wp_nav_menu(array("theme_location"=>"foot-menu")); ?>
+	 
 	</li>
 	
     </ul>

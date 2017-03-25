@@ -48,6 +48,7 @@
 		'flex-width' => true,
 	 ) );
     }
+	
     add_action( 'after_setup_theme', 'theme_prefix_setup' );
     //this action is used to call the logo
 

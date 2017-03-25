@@ -12,6 +12,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 *{
 	margin:0% 0%;
 	padding:0%;
+	list-style:none;
 }
 
 #header{
@@ -21,20 +22,20 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	background:#f38630;
 }
 
-		#logo_pic{
-			height:65%;
-			width:20%;
-			margin:1% 0.5%;
-			padding:0%;
-			float:left;
+        #header .custom-logo{
+		  height:65%;
+		  width:20%;
+          margin:1% 0.5%;
+		  padding:0%;
+		  float:left;		  
 		}
+		
 
         #header #menu_level{
 			float:right;
 			width:63%;
 			margin:0% 0%;
-			padding:0%;
-            list-style: mone;			
+			padding:0%;			
      		}
 			
 		#header #menu_level .menu{
@@ -42,14 +43,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			margin:0% 0%;
 		}
 
-	        .menu > li{
+	        #menu_level .menu > li{
 			float:left;
 			width:15%;
 			margin:0% 0%;
 			padding:1%;
 			cursor:pointer;
 			text-align:center;
-			list-style:none;
 			}
 			
 			.menu  li a{
@@ -63,22 +63,21 @@ Use it to make something cool, have fun, and share what you've learned with othe
 				color:#993408;
 			}
 			
-			.sub-menu > li{
+			.menu .sub-menu  >  li{
 			padding:1%;
 			cursor:pointer;	
 			padding:0%;
 			font-size:1.5em;
 			width:103%;
 			background:#4c5b5c;
-			list-style:none;
 			}
 			
-			.sub-menu{
+			.menu .sub-menu{   
             padding:0%;
 			margin:0% 0%;
 			position:absolute;
 			width:8%;		
-            display:none;	
+            display:none;
             z-index:10;			
 			}
 			
@@ -100,16 +99,16 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			text-decoration:none;
 			}
 			
-			.sub-menu .sub-menu{
+			#menu_level .sub-menu .sub-menu{
 				width:100%;
 				padding:0%;
 				margin:0% 100%;
 				float:right;
-				display:none;
 				z-index:10;	
+				display:none;
 			}
 			
-	       .sub-menu .sub-menu li {
+	       #menu_level .sub-menu .sub-menu li {
 			    width:100%;
 				cursor:pointer;
 				text-align:center;
@@ -119,7 +118,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 				padding:0%;
 				background:#4c5b5c;
 				margin:0% 0%;
-				list-style:none;
+				
 		    }
 			
 			.sub-menu .sub-menu li:hover{
@@ -254,12 +253,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 #footer{
 	width:100%;
+	text-decoration:none;
+	list-style:none;
 }
 
 #footer #footer1{
 	border:1px solid;
 	height:50%;
 	width:100%;
+	list-style:none;
 	background:url("img/back.jpg");
 }
 
@@ -277,7 +279,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		 width:22%;
 		 height:100%;
 		 border-radius:5%;
-		 list-style:none;
 		}
 
 		#footer1 ul li:hover{
@@ -396,6 +397,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			 height:27%;
 			 padding:0%;
 			 margin:0% 0%;
+			 list-style:none;
 		 }
 
 		  
@@ -404,7 +406,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	border:1px solid;
 	height:auto;
 	width:100%;
-	background:#4c5b5c;
 	z-index:100;
 }
 
@@ -414,7 +415,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		width:100%;
 	}
 	
-	#footer2 #footer_logo {
+	#footer2 #footer_logo{
 		width:100%;
 		height:15%;
 		margin:1% 0%;
@@ -457,7 +458,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	#footer2 #apps a{
 			 margin:0% 0%;
 			 font-size:1.2em;
-			 color:#2aff55;;
+			 color:#2aff55;
 			 padding:0%;
 		}
 		
@@ -481,7 +482,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		margin:0% 1.5%;
 		float:left;
 		padding:0%;
-		list-style:none;
 		height:100%;
 	}
 	
@@ -550,54 +550,63 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		color:#b1b7ad;
 	}
 	
-#footer #footer3{
-	background:#f38630;
+#footer3 *{
+	margin:0% 0%;
+	padding:0%;
+}	
+
+#footer3{
 	height:10%;
 	width:100%;
-	list-style:none;
 }
 
-#footer #footer3 #copy{
+#footer3{
 	float:left;
-	width:25%;
-	margin:1% 3%;
-	padding:0%;
+	width:100%;
 }
 
-#footer #footer3 #copy a{
+#footer3 a{
 	color:black;
-	font-size:1.2em;
 }
 
-           #footer #footer3 .menu{
+
+#footer3 .lead{
+    line-height:0;
+	margin:0% 3%;
+}
+
+            #footer3 div{
 				float:right;
 				width:45%;
-				margin:1% 0%;
+				text-decoration:none;
 			}
 			
-			#footer  #footer3 .menu > li{
+			#footer3 div li{
 			width:15%;
-			margin:0% 0%;
-			padding:0%;
 			cursor:pointer;
 			text-align:center;
 			font:bold;
-			text-decoration:none;
+			display:inline;
+			margin:0% 1%;
 			}
 
-			#footer .menu li a{
+			#footer3 .menu li a{
 			text-decoration:none;
             font-family:tahoma;
 			font-size:1.3em;
 			color:#666;			
 			}
 			
-			#footer .menu li a:hover{
+			#footer3 .menu li a:hover{
 				color:#993405;
 			}
 			
-			#footer .sub-menu li{
+			#footer3 .sub-menu li{
 				display:none;
+			}
+			
+			#footer3 div{
+				margin:0%;
 			}
 /*---------------------------------------------------------*/ 
 /*the code of css for footer is going to over here */	 
@@ -609,9 +618,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /*---------------------------------------------------------*/
 
 #all_page{
-	background:url("img/t6.jpg");
+	/*background:url("img/t6.jpg");*/
 	padding:0% 0%;
 	margin:0%;
+	height:auto;
 }
 
 #page_data{
@@ -619,7 +629,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	background:#de951d;
 	opacity:0.9;
 	width:50%;
-	margin:3% 23%;
+	margin:0% 23%;
 	border-radius:5%;
 }
 
@@ -631,7 +641,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /*the code of css for category is going to started here */	 
 /*---------------------------------------------------------*/
 #category{
-	background:url("img/t6.jpg");
+	/*background:url("img/t6.jpg");*/
 	padding:0% 0%;
 	margin:0%;
 }
