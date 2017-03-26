@@ -56,6 +56,16 @@
 	//this is the widget part for the news widget
 	
 	register_sidebar( array(
+		'name' => 'Footer Sidebar 2',
+		'id' => 'footer-sidebar-2',
+		'description' => 'Appears in the footer area',
+		'before_widget' => '<li id="company">',
+		'after_widget' => '</li>',
+		'before_title'  => '<a href="" class="widget-title"><img src="http://localhost/wordpress/wp-content/uploads/2017/01/love-pointer.png">',
+		'after_title'   => '</img></a>',
+		) );
+		
+	register_sidebar( array(
 		'name'          => 'news widget', // this is the widget is used for //security and privacy
 		'before_widget' => '<div id="news" >',
 		'after_widget'  => '</div>',
@@ -95,15 +105,7 @@
 		'after_title'   => '</img></a>',
 	) );
 	
-	register_sidebar( array(
-		'name' => 'Footer Sidebar 2',
-		'id' => 'footer-sidebar-2',
-		'description' => 'Appears in the footer area',
-		'before_widget' => '<li id="company">',
-		'after_widget' => '</li>',
-		'before_title'  => '<a href="" class="widget-title"><img src="http://localhost/wordpress/wp-content/uploads/2017/01/love-pointer.png">',
-		'after_title'   => '</img></a>',
-		) );
+	
 	
 	
     }
