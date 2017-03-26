@@ -1,7 +1,5 @@
-
-<?php  if(is_page($post_page) ==  have_comments() || have_posts() ){
+<?php  if(is_page($post_page) ==  have_comments() || have_posts() || has_tag ){
 	    ?>
-		
           <div id="feedback_area">	<!--if the page or post having comments-->	  
           <?php  comments_template( '/short-comments.php' );  ?>
 		  </div>

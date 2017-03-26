@@ -43,22 +43,15 @@
 		   
 		   
            <li id="info"> 
-		     <center><ul>
-		        <li id="info_place">
-                <?php  if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('place widget') ): ?>
-	            <?php endif; ?>
-				</li>
-				
-				<li id="info_product"> 
-				<?php  if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('product widget') ): ?>
-	            <?php endif; ?>
-				</li>
-				
-				<li id="info_company">
-                <?php  if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('company widget') ): ?>
-	            <?php endif; ?>
-				</li>
-		     </ul></center>
+		     <center>
+                <ul id="list_text">
+				<?php
+				if(is_active_sidebar('footer-sidebar-2')){
+				dynamic_sidebar('footer-sidebar-2');
+				}
+				?>
+				</ul>
+				</center>
 		   </li>	
 		   
         </ul>	

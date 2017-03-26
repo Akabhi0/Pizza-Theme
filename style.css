@@ -172,6 +172,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	opacity:0.7;
 	border-radius:15%;
  }
+ 
+   .carousel-indicators{
+	   display:none;
+   }
+   
+   .glyphicon-chevron-left::before {
+	 display:none;   
+   }
+   
+   .glyphicon-chevron-right::before{
+	   display:none;
+   }
 
    
       #jquery{
@@ -473,16 +485,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		margin:0% 0%;
 		padding:0%;
 		width:80%;
-		height:50%;
-		display:none;
+		height:60%;
 	}	
 	
 	#footer2 #info li{
 		width:30%;
-		margin:0% 1.5%;
+		margin:0% 0%;
 		float:left;
 		padding:0%;
-		height:100%;
+		height:50%;
 	}
 	
 	
@@ -550,6 +561,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		color:#b1b7ad;
 	}
 	
+	/*=============================================*/
 #footer3 *{
 	margin:0% 0%;
 	padding:0%;
