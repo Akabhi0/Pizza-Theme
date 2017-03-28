@@ -53,93 +53,32 @@
     //this action is used to call the logo
 
 	function Akabhi_widgets_init() {
-	//this is the widget part for the news widget
-	
+		
+	//this is the sidebar for footer-2
 	register_sidebar( array(
-		'name' => 'Footer Sidebar 2',
-		'id' => 'footer-sidebar-2',
-		'description' => 'Appears in the footer area',
+        'name'          => 'Footer-Sidebar-2',
+		'id'            => 'footer-sidebar-2',
+		'description'   => 'Appears in the footer area',
 		'before_widget' => '<li id="company">',
-		'after_widget' => '</li>',
+		'after_widget'  => '</li>',
 		'before_title'  => '<a href="" class="widget-title"><img src="http://localhost/wordpress/wp-content/uploads/2017/01/love-pointer.png">',
 		'after_title'   => '</img></a>',
 		) );
 		
-	register_sidebar( array(
-		'name'          => 'news widget', // this is the widget is used for //security and privacy
-		'before_widget' => '<div id="news" >',
-		'after_widget'  => '</div>',
-		'before_title'  => '<p>'.wpb_postsbycategory(),
-		'after_title'   => '</p>',
-	) );
-	
-    register_sidebar( array(
-		'name'          => 'work widget', //this is the logo and partner widget 
-		'before_widget' => '<div id="partner">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<a href=" " class="widget-title"><img src="http://localhost/wordpress/wp-content/uploads/2017/01/handshake.png">',
-		'after_title'   => '</img></a>',
+	//this is the sidebar for footer-3	
+		register_sidebar( array(
+		'name'          => 'Footer-Sidebar-3', //this is the logo and partner widget
+        'id'            => 'footer-sidebar-3',		
+		'before_widget' => '<li id="partner">',
+		'after_widget'  => '</li>',
+		'before_title'  => '<div id="jquery_news"><a href=" " class="widget-title"><img src="http://localhost/wordpress/wp-content/uploads/2017/01/handshake.png">',
+		'after_title'   => '</img></a></div>',
 	) );	
 	
-	register_sidebar( array(
-		'name'          => 'offer widget', //this is the security and privacy widget 
-		'before_widget' => '<div id="page">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<a class="widget-title" href=""><img src="http://localhost/wordpress/wp-content/uploads/2017/01/mug.png">',
-		'after_title'   => '</img></a>',
-	) );
-	
-	register_sidebar( array(
-		'name' => 'social widget',//this is used for stay in touch
-		'before_widget' => '<div id="stay">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<a href="" class="widget-title"><img src="http://localhost/wordpress/wp-content/uploads/2017/01/team.png">',
-		'after_title'   => '</img></a>',
-	) );
-
-	register_sidebar( array(
-		'name' => 'apps widget',//this is used for mobile apps
-		'before_widget' => '<div id="apps">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<a href="" class="widget-title">',
-		'after_title'   => '</img></a>',
-	) );
-	
-	
-	
-	
-    }
+	}
 	
 	//this is the action to calling the widget on the wordpress theam
    add_action( 'widgets_init', 'Akabhi_widgets_init' );
-   
-   //adding the post categorie in news widget part 
-   function wpb_postsbycategory() {
-			// the query
-			$the_query = new WP_Query( array( 'category_name' => 'news', 'posts_per_page' => 3) ); 
-
-			// The Loop
-			if ( $the_query->have_posts() ) {
-				$string .= '<div id="one_one1"><ul>';
-				while ( $the_query->have_posts() ) {
-					$the_query->the_post();
-						// if no featured image is found
-						$string .= '<li><a href="' . get_the_permalink() .'" rel="bookmark">' . substr(get_the_excerpt(),0,70) .'</a></li>';
-						}
-				} else {
-				// no posts found
-			}
-			$string .= '</ul></div>';
-
-			return $string;
-			/* Restore original Post Data */
-			wp_reset_postdata();
-			}
-			// Add a shortcode
-			add_shortcode('categoryposts', 'wpb_postsbycategory');
-
-			// Enable shortcodes in text widgets
-			add_filter('widget_text', 'do_shortcode');
 
 /////////////////////////////////////////////////////////////////////
 //function is used for the different css pages

@@ -269,7 +269,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	list-style:none;
 }
 
-#footer #footer1{
+#footer1{
 	border:1px solid;
 	height:50%;
 	width:100%;
@@ -277,14 +277,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	background:url("img/back.jpg");
 }
 
-		#footer1 ul{
+		#footer1 #sidebar{
 		 margin:0% 0%;
 		 padding:0%;
 		 width:90%;
-		 height:auto;
+		 height:100%;
 		}
 
-		#footer1 ul li{
+		#footer1 #sidebar li{
 		 float:left;
 		 margin:0% 1.5%;
 		 padding:1%;
@@ -297,93 +297,53 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			background:#de951d;
 			opacity:0.8;
 		}
-
-		#footer1 #widget div{
-		background:#de951d;
-		border-radius:5%;
-		}
-
-		#footer1 #widget #footer_news div{
-		background:#de951d;
-		border-radius:5%;
-		}
-
-       #footer1 #footer_news div a{
-			 text-decoration-style:dashed;
-			 margin:1% 3%;
-			 text-align:left;
-			 font-family:tahoma;
-			 font-size:1.3em;
-			 color:Black;
+		
+		#footer1 .post-title{
+			display:none;
 		}
 		
-		#footer1 #widget #footer_news #news{
-		background:none;
-        display:none;		
+	
+		#footer1  #jquery_news{
+		background:#de951d;
+		border-radius:5%;
+		height:26%;
 		}
 		
-		#footer1 #widget #footer_news #one_one1 li{
-			font-size:0.8em; 
+		#jquery_news .widget-title{
+			font-size:1.4em;
+		    text-decoration:none;
+		    color:#4c5b5c;
+		}
+		
+		#jquery_news .widget-title img{
+		   padding:2%;	 	   
+		}
+		
+		#partner ul{
+		  width:100%;
+		  height:50%;
+		}
+		
+		#footer1 #partner ul li{
+			width:100%;
+			height:auto;
 			padding:0%;
 			margin:0% 0%;
-			height:23%;
-		}	
-		
-		#footer_news #news p{
-		     display:none;
-			 margin:0% 0%;
-			 padding:0%;
-			 background:none;
-		}
-
-       #footer1 #widget a{
-			 text-decoration-style:dashed;
-			 margin:1% 3%;
-			 text-align:left;
-			 font-family:tahoma;
-			 font-size:1.3em;
-			 color:Black;
 		}
 		
-		#footer1 .widget-title img{
-		   padding:2%;	   
-		}
-		
-		#footer1 .textwidget #logo{
-		width:90%;
-        height:auto;
-        margin:.5% 0%;
+		#footer1 .cat-post-item{
+		width:100%;
+        font-size:1em;
         padding:0%;
-        text-align:left;		
-		background:black;
+        margin:0% 0%;
+        height:auto;		
 		}
 		
-		.textwidget #logo li{
-			width:100%;
-		    height:auto;
-			margin:0% 0%;
-			padding:0%;
-			display:none;
+		
+		#footer1 .cat-post-item:hover{
+			color:#FFF;
 		}
 		
-		.textwidget #logo img{
-			width:30%;
-			margin:2% 0%;
-			height:auto;
-		}
-		
-		.menu-sub-menu-container{
-			height:auto;
-		}
-		
-		#page .menu li{
-			text-align:left;
-			height:auto;
-			width:100%;
-			display:none;
-		}
-		
-
 		#footer1 .socialmedia-buttons #logo_plug{
 			width:51%;
 			height:auto;
@@ -391,30 +351,44 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		}
 		
 		
-		#footer .socialmedia-buttons a{
+		#footer1 .socialmedia-buttons a{
 			float:left;
 			width:100%;
 			margin:0% 0%;
 			height:auto;
-			display:none;
+			font-family:"Genericon";
 		}
 		
-		.cat-item {
-			 display:none;
-		 }
+		#footer1 .textwidget #recent_project{
+		width:90%;
+        height:auto;
+        margin:.5% 0%;
+        padding:0%;
+        text-align:left;		
+		}
 		
+		.textwidget #recent_project li{
+			width:100%;
+		    height:auto;
+			margin:0% 0%;
+			padding:0%;
+        }
 		
-		 #footer #one_one1 li{
-			 width:100%;
-			 height:27%;
-			 padding:0%;
-			 margin:0% 0%;
-			 list-style:none;
-		 }
+		.textwidget #recent_project img{
+			width:30%;
+			margin:2% 0%;
+			height:auto;
+        }
+		
+		#footer1 .menu li{
+			text-align:left;
+			height:auto;
+			width:100%;	
+		}
 
-		  
-		  
-#footer #footer2{
+		
+		
+#footer #footer2{   /*not copy this section */ 
 	border:1px solid;
 	height:auto;
 	width:100%;
@@ -448,6 +422,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	#footer2 #info{
 		width:100%;
 		height:auto;
+	    display:none;	
 	}
 
 	
@@ -485,7 +460,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		margin:0% 0%;
 		padding:0%;
 		width:80%;
-		height:60%;
+		height:50%;
 	}	
 	
 	#footer2 #info li{
@@ -493,44 +468,44 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		margin:0% 0%;
 		float:left;
 		padding:0%;
-		height:50%;
+		height:40%;
 	}
 	
 	
-	#footer2 #place #palce_work{
+	#footer2 #palce_work{
 		height:10%;
 	}
-	#footer2 #place #palce_work li{
+	#footer2 #palce_work li{
        width:100%;
        padding:0%;
-       margin:1% 0%;
+       margin:0% 0%;
        color:#fff;
        cursor:pointer;  
 	}
 	
-	#footer2 #place #palce_work li:hover{
+	#footer2 #palce_work li:hover{
 			 margin:0% 0%;
 			 color:#b1b7ad;
 		}
 	
-	#footer2 #product #product_our{
+	#footer2  #product_our{
 		height:10%;
 	}
 	
-	#footer2 #product #product_our li{
+	#footer2 #product_our li{
        width:100%;
        padding:0%;
        margin:1% 0%;
 	}
 	
-	#footer2 #product #product_our a{
+	#footer2  #product_our a{
 		color:#fff;
 		text-decoration:none;
 		cursor:pointer;
 		font-size:1.0em;
 	}
 	
-	#footer2 #product #product_our a:hover{
+	#footer2 #product_our a:hover{
 		 margin:0% 0%;
 		 color:#b1b7ad;
 		 font-size:1.0em;
@@ -559,7 +534,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
     #footer2 #info .widget-title:hover{
 		color:#b1b7ad;
-	}
+	}                                      /***************************************************************/
 	
 	/*=============================================*/
 #footer3 *{
