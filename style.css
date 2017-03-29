@@ -152,20 +152,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	   background:#de951d;
    }
    
-   #pic{
-	  float:left;
-	  width:100%;
-	  height:100%;
-	  background:#fff;
-	  margin:0% 0%;
-	  padding:0%;
-  }
-  
-  #pic img{
-	  height:100%;
-	  width:100%;
-	  padding:0%; 
-  }
+   .carousel{
+	   width:100%;
+	   height:100%;
+   }
   
   .carousel-caption{
 	background:black;
@@ -184,7 +174,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
    .glyphicon-chevron-right::before{
 	   display:none;
    }
-
+   
+   #javascript  img{
+	   width:100%;
+	   height:100%;
+	   line-height:0;
+   }
    
       #jquery{
 	   background:#fff;
@@ -202,62 +197,59 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	   background:#4c5b5c;
    }
    
-   #sub_pages ul{
-	   margin:0% 13%;
+   #jquery .pagenav{
+	  padding:0%;
+	  margin:0% 5%;
+	  width:20%;
+	  height:100%;
+	  float:left;
+  }
+  
+  
+   #sub_pages .pagenav ul{
+	   margin:0% 0%;
 	   padding:0.5%;
 	   width:100%;
 	   height:100%;
-	   
+	   background:red;	   
    }
    
-   #sub_pages  li{
-	 float:left;
-	 margin:0% 1%;
-     padding:0%;
+   
+   #sub_pages .pagenav li{
+	 margin:0% 0%;
+     padding:1%;
      border:0px solid;
-     width:22%;
-     display:inline;
-     height:100%;	 
+     width:100%;
+     height:18%;
+     background:#fff;
+	 text-align:left;	 
    }
+   
+   #sub_pages li a{
+	   font-size:1.7em;
+	   color:#000;
+	   text-decoration:none;
+   }
+   
+   #sub_pages  li:hover{
+	 background:#de951d;
+   }
+   /*////////////////////////////////////////////////////*/ 
   
-  
-  
- #jquery #block1{
-	  background:#de951d;
-	  text-align:left;
-	  border:2px solid red;
+  #jquery_pic{
+	  height:auto;
+	  width:20%;
+	  display:inline;
   }
   
-  #jquery #block1:hover{
-	  opacity:0.8;
-  }
-  
-  #block1 img{
-	  border-radius:5%;
-	  padding:1%;
-	  margin:0% 5%;
-	  height:40%;
-	  width:90%;
-  }
-  
-  #block1 h4{
-	  margin:0% 0%;
+   #jquery_pic img{
+	  border-radius:1%;
 	  padding:0%;
-	  font-size:140%;
-	  color:#000;
-  }
-    
-  #block1 p{
 	  margin:0% 0%;
-	  padding:2%;
-	  font-size:110%;
-	  color:#000;
-  }  
-  #sub_pages #block1 div{
-	  margin:3% 5%;
-	  padding:0%;
-	  width:90%;
+	  height:45%;
+	  width:15%;
   }
+  
 }
 /*---------------------------------------------------------*/ 
 /*the code of css for body is going to over here */	 
@@ -306,7 +298,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		#footer1  #jquery_news{
 		background:#de951d;
 		border-radius:5%;
-		height:26%;
 		}
 		
 		#jquery_news .widget-title{
@@ -322,6 +313,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		#partner ul{
 		  width:100%;
 		  height:50%;
+		  display:none;
 		}
 		
 		#footer1 #partner ul li{
@@ -348,15 +340,17 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			width:51%;
 			height:auto;
 			margin:0.5% 8%;
+			
 		}
 		
 		
-		#footer1 .socialmedia-buttons a{
+		#footer1 .socialmedia-buttons a{ 
 			float:left;
 			width:100%;
 			margin:0% 0%;
 			height:auto;
 			font-family:"Genericon";
+			display:none;
 		}
 		
 		#footer1 .textwidget #recent_project{

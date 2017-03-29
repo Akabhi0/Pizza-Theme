@@ -2,8 +2,6 @@
 	<div id="body">
 	  <ul>
 	    <li id="javascript"> 
-		
-            <div id="pic">
 				<?php query_posts('showposts=3&post_type=post'); ?>
 				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
@@ -42,34 +40,52 @@
 					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 					<span class="sr-only">Next</span>
 				  </a>
-				</div>
 				<?php wp_reset_query(); ?> 
 	        </div><!-- #content -->	
         
 		</li><!-- this is the part where feature image display here -->
 				
+			<?php  
+			$array = array(
+			"child_of" => $post->ID,
+			"title_li"  => " "
+			);
+			?>	
+			
 	    <li id="jquery">
-             <center><div id="sub_pages"><!--this is the part where sub pages are going to show-->
-			 <ul>
-			  
-				<!--this is the part of child page-->
-				<?php
-                $post = array( 200 ,197, 194) ;
-			    foreach( $post as $key ){
-				if($key == 200 || $key == 197|| $key == 194){
-			    ?>
-				<!-- featuring page image title and dec -->
-			    <li id="block1" class="thumbnail">
-				    <?php
-			         echo get_the_post_thumbnail($key); // <!--this is the code for the importing the backgorund image-->
-                          $dis = get_page($key); ?>					
-					<div class="caption">
-                    <h4><?php  echo  $dis->post_title; ?></h4>
-				    <p><?php echo  substr($dis -> post_content,0,170);  }} ?></p>
-                    </div>
-		        </li>
+		
+             <center><div id="sub_pages"><!--this is the part where sub pages are going to show--> 
+		
+			      <?php wp_list_pages($array); ?>
 				
-			 </ul>
+			 <?php 
+			    //this is the way of takinng the name of the child pages
+                $arrar = array(
+				  "child_of" => $post->ID,  //getting the child page on our front-page
+				  "title_li" => ""
+				);			  
+			   
+			    //this is only for taking the thumbnail and little details
+				$child_pages_query_args = array(    //#####in this we are using WP_Query() to get all the children from the parent page
+					'post_type'   => 'page',
+					'post_parent' => $post->ID,
+					'orderby'     => 'menu_order'
+				);
+				$child_pages = new WP_Query( $child_pages_query_args );
+
+					if ( $child_pages->have_posts() ) {
+					while ( $child_pages->have_posts() ) {
+					$child_pages->the_post();
+					
+					?>
+                   					
+					<li id="jquery_pic">
+						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+			        </li>
+					
+				
+               <!----------------------------------------------------------------->
+			 <?php    } } ?>
 			 </div></center>
 		</li><!-- this is the part where child page display here here -->
 	  </ul>

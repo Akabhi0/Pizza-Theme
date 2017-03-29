@@ -8,6 +8,6 @@
 			       <p> There is editable page is showing </p>
             </center>
 	      </div>
-		  		  
+	
 	  <?php } ?>
 </div>
