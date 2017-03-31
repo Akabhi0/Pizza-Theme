@@ -61,8 +61,9 @@
 		'description'   => 'Appears in the footer area',
 		'before_widget' => '<li id="company">',
 		'after_widget'  => '</li>',
-		'before_title'  => '<a href="" class="widget-title"><img src="http://localhost/wordpress/wp-content/uploads/2017/01/love-pointer.png">',
-		'after_title'   => '</img></a>',
+		'before_title'  => '<a href="" class="widget-title">
+		                    <img src="http://localhost/wordpress/wp-content/uploads/2017/01/love-pointer.png">',
+		'after_title'   => '</a>',
 		) );
 		
 	//this is the sidebar for footer-3	
@@ -71,8 +72,9 @@
         'id'            => 'footer-sidebar-3',		
 		'before_widget' => '<li id="partner">',
 		'after_widget'  => '</li>',
-		'before_title'  => '<div id="jquery_news"><a href=" " class="widget-title"><img src="http://localhost/wordpress/wp-content/uploads/2017/01/handshake.png">',
-		'after_title'   => '</img></a></div>',
+		'before_title'  => '<div id="jquery_news"><a href=" " class="widget-title">
+		                    <img src="http://localhost/wordpress/wp-content/uploads/2017/01/handshake.png">',
+		'after_title'   => '</a></div>',
 	) );	
 	
 	}

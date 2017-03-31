@@ -81,9 +81,9 @@
                    					
 					<li id="jquery_pic">
 						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+						<h5><?php the_title(); ?></h5>
+						<h4><?php echo substr(get_the_excerpt(),0,75); ?></h4>
 			        </li>
-					
-				
                <!----------------------------------------------------------------->
 			 <?php    } } ?>
 			 </div></center>
