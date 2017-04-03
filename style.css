@@ -360,7 +360,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			margin:0% 0%;
 			height:auto;
 			font-family:"Genericon";
-			display:none;
+            display:none;
+			
 		}
 		
 		#footer1 .textwidget #recent_project{
@@ -721,26 +722,30 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /*==============================================================================*/
 /*For browser/screen widths less than 768px*/
 @media screen and  (min-device-width : 320px) and (max-device-width : 480px) {
+	
    *{
 	margin:0% 0%;
 	padding:0%;
 	list-style:none;
-}
+    }
 
-#header{
-	width:100%;
-	height:15%;
-	z-index:100;
-	background:#f38630;
-}
+	/*==============================*/
+	           /*header*/
+	/*==============================*/
+		#header{
+			width:100%;
+			height:15%;
+			z-index:100;
+			background:#fff;
+		}
 
         #header .custom-logo{
-		  height:65%;
+		  height:50%;
 		  width:33%;
           margin:1% 34%;		  
 		}
-
-        #header #menu_level{
+		
+		#header #menu_level{
 			float:right;
 			width:100%;
 			margin:0% 0%;
@@ -763,7 +768,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			
 			.menu  li a{
             font-family:tahoma;
-			font-size:1.8em;
+			font-size:1em;
 			color:#333;			
 			text-decoration:none;	
 			}
@@ -840,152 +845,158 @@ Use it to make something cool, have fun, and share what you've learned with othe
                margin:0% 0%;	
                			   
 			}
+		
+	/*==============================*/
+	/*==============================*/
 
 
-#body{
-	border:1px solid black;
-	width:100%;
-	height:auto;
-	margin:0% 0%;
-}
+	/*==============================*/
+	           /*body*/
+	/*==============================*/
+		#body{
+			border:1px solid black;
+			width:100%;
+			height:auto;
+			margin:0% 0%;
+		}
 
-#body ul{
-	 padding:0%;
-	 margin:0% 0%;
- }
-   #javascript{
-	   padding:0.5%;
-	   margin:0% 0%;
-	   width:100%;
-	   height:60%;
-	   background:#de951d;
-   }
-   
-   .carousel{
-	   width:100%;
-	   height:100%;
-   }
-  
-  .carousel-caption{
-	background:black;
-	opacity:0.7;
-	border-radius:15%;
-	height:20%;
-	width:50%;
-	margin:0% 0%;
-	padding:0%;
- }
+		#body ul{
+			 padding:0%;
+			 margin:0% 0%;
+		 }
+		   #javascript{
+			   padding:0.5%;
+			   margin:0% 0%;
+			   width:100%;
+			   height:60%;
+			   background:#de951d;
+		   }
+		   
+		   .carousel{
+			   width:100%;
+			   height:100%;
+		   }
+		  
+		  .carousel-caption{
+			background:black;
+			opacity:0.7;
+			border-radius:15%;
+			height:20%;
+			width:50%;
+			margin:0% 0%;
+			padding:0%;
+		 }
 
- 
-   .carousel-indicators{
-	   display:none;
-   }
-   
-   .glyphicon-chevron-left::before {
-	 display:none;   
-   }
-   
-   .glyphicon-chevron-right::before{
-	   display:none;
-   }
-   
-   #javascript  img{
-	   width:100%;
-	   height:100%;
-	   line-height:0;
-   }
-   
-      #jquery{
-	   background:#fff;
-	   padding:0%;
-	   margin:0% 0%;
-	   width:100%;
-	   height:15%;
-      }
-	  
-   #sub_pages{
-	   height:100%; 
-	   padding:0%;
-	   margin:0% 0%;
-	   width:100%;
-	   background:#4c5b5c;
-   }
-   
-   #jquery .pagenav{
-	  padding:0%;
-	  width:100%;
-	  height:100%;
-	  float:left;
-	  margin-left:0%;
-	  margin-right:0%;
-  }
-  
-  
-   #sub_pages .pagenav ul{
-	   margin:0% 0%;
-	   padding:0%;
-	   width:100%;
-	   height:100%;
-       background:#4c5b5c;
-       opacity:0.7;	   
-   }
-   
-   
-   #sub_pages .pagenav li{
-	 margin:0% 0%;
-     padding:1%;
-     border:0px solid;
-     width:100%;
-     height:auto;
-	 text-align:center;	 
-   }
-   
-   #sub_pages li a{
-	   font-size:2.5em;
-	   color:#000;
-	   text-decoration:none;
-   }
-   
-   #sub_pages li:hover{
-	 background:#de951d;
-   }
-   /*////////////////////////////////////////////////////*/ 
-  
-  #jquery_pic{
-	  height:auto;
-	  width:20%;
-	  display:inline;
-	  float: left;
-      margin: 0% 0%;
-      padding: 0%;
-	  display:none;
-  }
-  
-  #jquery_pic a{
-	  width:20%;
-  }
-  
-   #jquery_pic h4{
-	   text-align:left;
-	   padding:3%;
-	   display:none;
-   }
-  
-   #jquery_pic img{
-	  border-radius:1%;
-	  padding:2%;
-	  margin:0% 0%;
-	  height:45%;
-	  width:100%;
-  }
-
-#footer{
-	width:100%;
-	text-decoration:none;
-	list-style:none;
-}
-
-#footer1{
+		 
+		   .carousel-indicators{
+			   display:none;
+		   }
+		   
+		   .glyphicon-chevron-left::before {
+			 display:none;   
+		   }
+		   
+		   .glyphicon-chevron-right::before{
+			   display:none;
+		   }
+		   
+		   #javascript  img{
+			   width:100%;
+			   height:100%;
+			   line-height:0;
+		   }
+		   
+			  #jquery{
+			   background:#fff;
+			   padding:0%;
+			   margin:0% 0%;
+			   width:100%;
+			   height:15%;
+			  }
+			  
+		   #sub_pages{
+			   height:100%; 
+			   padding:0%;
+			   margin:0% 0%;
+			   width:100%;
+			   background:#4c5b5c;
+		   }
+		   
+		   #jquery .pagenav{
+			  padding:0%;
+			  width:100%;
+			  height:100%;
+			  float:left;
+			  margin-left:0%;
+			  margin-right:0%;
+		  }
+		  
+		  
+		   #sub_pages .pagenav ul{
+			   margin:0% 0%;
+			   padding:0%;
+			   width:100%;
+			   height:100%;
+			   background:#4c5b5c;
+			   opacity:0.7;	   
+		   }
+		   
+		   
+		   #sub_pages .pagenav li{
+			 margin:0% 0%;
+			 padding:1%;
+			 border:0px solid;
+			 width:100%;
+			 height:auto;
+			 text-align:center;	 
+		   }
+		   
+		   #sub_pages li a{
+			   font-size:2.5em;
+			   color:#000;
+			   text-decoration:none;
+		   }
+		   
+		   #sub_pages li:hover{
+			 background:#de951d;
+		   }
+		   /*////////////////////////////////////////////////////*/ 
+		  
+		  #jquery_pic{
+			  height:auto;
+			  width:20%;
+			  display:inline;
+			  float: left;
+			  margin: 0% 0%;
+			  padding: 0%;
+			  display:none;
+		  }
+		  
+		  #jquery_pic a{
+			  width:20%;
+		  }
+		  
+		   #jquery_pic h4{
+			   text-align:left;
+			   padding:3%;
+			   display:none;
+		   }
+		  
+		   #jquery_pic img{
+			  border-radius:1%;
+			  padding:2%;
+			  margin:0% 0%;
+			  height:45%;
+			  width:100%;
+		  }
+	/*==============================*/
+	/*==============================*/
+	
+	/*==============================*/
+	           /*footer1*/
+	/*==============================*/
+	
+	#footer1{
 	border:1px solid;
 	height:30%;
 	width:100%;
@@ -1106,8 +1117,13 @@ Use it to make something cool, have fun, and share what you've learned with othe
 			font-size:1.2em;
 		}
 
-		
-    #footer #footer2{   /*not copy this section */ 
+    /*==============================*/
+	/*==============================*/
+	
+	/*==============================*/
+	           /*footer2*/
+	/*==============================*/
+	#footer #footer2{   /*not copy this section */ 
 	border:1px solid;
 	height:auto;
 	width:100%;
@@ -1256,10 +1272,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
     #footer2 #info .widget-title:hover{
 		color:#b1b7ad;
-	}                                     
-	/***************************************************************/
-	/*=============================================*/
-			#footer3 *{
+	}   
+	
+	/*==============================*/
+	/*==============================*/
+	
+    /*==============================*/
+	           /*footer3*/
+	/*==============================*/
+	  #footer3 *{
 				margin:0% 0%;
 				padding:0%;
 			}	
@@ -1315,59 +1336,60 @@ Use it to make something cool, have fun, and share what you've learned with othe
 				display:none;
 			}
  
-#feedback_area{
-	padding:3%;
-}
-#comments{
-	display:none;
-}
+			#feedback_area{
+				padding:3%;
+			}
+			#comments{
+				display:none;
+			}
 
-#feedback_area a{
-    color:#fff;
-	font-size:0.9em;
-}
+			#feedback_area a{
+				color:#fff;
+				font-size:0.9em;
+			}
 
-#feedback_area h3{
-	  color:#fff;
-}
-#feedback_area p{
-	  color:#000;
-	  font-size:0.9em;
-}
-#feedback_area .commentlist{
-	float:right;
-	background:#de951d;
-	border-radius:5%;
-	opacity:0.8;
-	width:100%;
-}
+			#feedback_area h3{
+				  color:#fff;
+			}
+			#feedback_area p{
+				  color:#000;
+				  font-size:0.9em;
+			}
+			#feedback_area .commentlist{
+				float:right;
+				background:#de951d;
+				border-radius:5%;
+				opacity:0.8;
+				width:100%;
+			}
 
-#feedback_area .commentlist li{
-	padding:2%;
-}
+			#feedback_area .commentlist li{
+				padding:2%;
+			}
 
-#feedback_area #respond{
-	width:100%;
-}
-#feedback_area #comment{
-	width:80%;
-}
+			#feedback_area #respond{
+				width:100%;
+			}
+			#feedback_area #comment{
+				width:80%;
+			}
 
-.nocomments{
-	display:none;
-}
+			.nocomments{
+				display:none;
+			}
 
-#breakfast{
-	height:35%;
-	background:#de951d;
-	opacity:0.9;
-	width:70%;
-	margin:3% 17%;
-	border-radius:5%;
-	
-}
-
+			#breakfast{
+				height:35%;
+				background:#de951d;
+				opacity:0.9;
+				width:70%;
+				margin:3% 17%;
+				border-radius:5%;
+				
+			}
  
+	/*==============================*/
+	/*==============================*/
 }
 /*===============================================================================*/
 /*===============================================================================*/
