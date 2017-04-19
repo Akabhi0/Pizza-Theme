@@ -9,25 +9,22 @@
 	        </center>
 	</li>
 	
-	<li id="footer2" style="background:#4c5b5c;">
+	<li id="footer2">
         <ul>	    
 	       <li id="footer_logo"> 
             <!--this is the code for costimzable footer logo-->
 	        <center>
 			 <!--thih is the code part where we write the costimze code for logo-->
 	         <?php	if ( function_exists( 'the_custom_logo' ) ) {
-                the_custom_logo();
+                        the_custom_logo();
              }?>
 			</center>
 		   </li>
 		   
 		   <li id="apps"> 
-		     <center><?php 
-				     dynamic_sidebar('footer-sidebar-app');					 
-			         ?></center>
+		     <center><h2 class="vc_custom_heading"><b>Services</b></h2></center>
 		   </li>
 		   
-		   <!------------info of company--------------->
            <li id="info"> 
 		     <center>
                 <ul id="list_text">
@@ -37,20 +34,21 @@
 				</ul>
 				</center>
 		   </li>	
-		   <!------------------------------------------->
+		   
         </ul>	
 	</li>
 	
-	<li id="footer3" style="background:#f38630;" > 
-	
-	  <a class="lead" href="<?php echo esc_url( __( 'https://techtec.in/', 'pizza theme' ) ); ?>">
-	  <?php printf( __( 'copyright &copy resvered design by %s', 'pizza theme' ), 'A.K.Abhi' ); ?></a>
-	 
-	 <?php  wp_nav_menu(array("theme_location"=>"foot-menu")); ?>
-	 
+	<li id="footer3"> 
+	  <nav class="navbar navbar-default">
+		  <a class="lead" href="<?php echo esc_url( __( 'https://techtec.in/', 'pizza theme' ) ); ?>">
+		  <?php printf( __( 'copyright &copy resvered design by %s', 'pizza theme' ), 'A.K.Abhi' ); ?></a>
+		  <?php  wp_nav_menu(array("theme_location"=>"foot-menu")); ?>
+        
+   	 </nav>
+
 	</li>
-	
     </ul>
+
     <?php wp_footer(); ?>
    </div>
 </body>

@@ -1,7 +1,7 @@
 <?php get_header(); ?><!--this is the vode for adding the header section in our body or index.php-->
 	<div id="body">
-	  <ul>
-	    <li id="javascript"> 
+	  <ul class="list-group">
+	    <li id="javascript" class="list-group-item" > 
 				<?php query_posts('showposts=3&post_type=post'); ?>
 				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
@@ -52,15 +52,15 @@
 			);
 			?>	
 			
-	    <li id="jquery">
+	    <li id="jquery" class="list-group-item">
 		
              <center><div id="sub_pages"><!--this is the part where sub pages are going to show--> 
 		
-			      <?php wp_list_pages($array); ?>
+			 <?php // wp_list_pages($array);  //this function is used to show all the name of the child page of the parent of the theme ?>
 				
 			 <?php 
 			    //this is the way of takinng the name of the child pages
-                $arrar = array(
+                  $arrar = array(
 				  "child_of" => $post->ID,  //getting the child page on our front-page
 				  "title_li" => ""
 				);			  
@@ -79,12 +79,12 @@
 					
 					?>
                    					
-					<li id="jquery_pic">
-						<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-						<h5><?php the_title(); ?></h5>
-						<h4><?php echo substr(get_the_excerpt(),0,75); ?></h4>
-			        </li>
-               <!----------------------------------------------------------------->
+                   	<ul class="list-group" >
+					  <li id="jquery_pic" class="wpb_column vc_column_container vc_col-sm-4" >
+						 <a href="<?php the_permalink(); ?>" > <?php the_post_thumbnail(); ?> <span id="some-element"><h4> <?php the_title(); ?> </h4> 
+						 <h5><?php echo substr(get_the_excerpt(),0,190); ?></h5> </span></a>
+				        </li>
+			        </ul>
 			 <?php    } } ?>
 			 </div></center>
 		</li><!-- this is the part where child page display here here -->

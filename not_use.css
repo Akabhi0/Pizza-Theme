@@ -23,7 +23,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
       #header .custom-logo{
-      height:10%;
+      height:30%;
       width:12em;
       margin:0% 0%;
       padding:0.5%;
@@ -191,10 +191,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	background:black;
 	opacity:0.7;
 	border-radius:15%;
-	padding: 0%;
-	margin: 0% 0%;
  }
  
+   
    #javascript  img{
 	   width:100%;
 	   height:100%;
@@ -256,10 +255,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
   #jquery_pic #some-element{
   	 position: absolute;
-  	 top:-18;
+  	 top: -28;
   	 z-index: 5;
-  	 right: 0;
-  	 width: 100%;
+  	 right: 4;
   	 padding: 1%;
   	 background: rgba(0, 46, 91, 0.9);
   }
@@ -268,7 +266,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
     text-align: left;
     margin-right: 70%;
     padding: 2%;
-    width: 80%;
+    width: 100%;
     color: #fff;
    }
 
@@ -451,6 +449,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	z-index:100;
 	background:#f2f2f2;
 }
+
+    #footer2 .textwidget{
+    	height: 70%;
+    }
+
     #footer2 ul{
 		padding:0%;
 		margin:0% 0%;
@@ -472,35 +475,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	#footer2 #apps{
 		width:100%;
 		height:10%;
-		margin:1% 0%;
-	}
-
-	#footer #apps h2{
-		margin:0% 0%;
-		padding:0%;
-		color:#002e5b;
-		font-size: 2.75em;
-		display: block;
-        font-family: "Lato", sans-serif;
+		margin:0.1% 0%;
 	}
 	 
-	#footer #apps h2::after{
-		content: '';
-		display: block;
-		width: 35px;
-		height: 6px;
-		background: #fde428;
-		-webkit-border-radius: 3px;
-		-moz-border-radius: 3px;
-		-ms-border-radius: 3px;
-		border-radius: 3px;
-		margin: 4px 0 0;
-	}
 
 	#footer2 #info{
 		width:100%;
 		height:auto;
-	    display: none;   
+	    
 	}
 
     #footer2 #info #company{
@@ -525,35 +507,20 @@ Use it to make something cool, have fun, and share what you've learned with othe
 		margin:0% 0%;
 		padding:0%;
 		width:80%;
-		height:60%;
+		height:80%;
 	}	
-
+	
 	#footer2 #info li{
 		width:30%;
 		margin:0% 0%;
 		float:left;
 		padding:0%;
-		height:17%;
+		height:10%;
 	}
 	
-	#footer2 .textwidget #palce_work{
-		margin:0% 0%;
-		padding:0%;
-		height:100%;
-		width: 80%;
+	#footer2 #palce_work{
+		height:10%;
 	}
-
-    #footer2 .textwidget #palce_work:hover{
-    	background: #fff;
-    }
-
-    #footer2 .textwidget #product_our{
-        margin:0% 0%;
-		padding:0%;
-		height:100%;
-		width: 80%;
-    }
-
 	#footer2 #palce_work li{
        width:100%;
        padding:0%;
@@ -561,89 +528,65 @@ Use it to make something cool, have fun, and share what you've learned with othe
        color:#132C55;
        cursor:pointer;  
        font-family: "Lato", sans-serif;
-       font-size: 1.3em;
 	}
 	
 	#footer2 #palce_work li:hover{
 			 margin:0% 0%;
 			 color:#7198E1;
-			 font-size: 1em;
 			 font-family: "Lato", sans-serif;
 		}
-
-	#footer2 #product_our:hover{
-      background: #fff;
-	}	
+	
+	#footer2  #product_our{
+		height:10%;
+	}
 	
 	#footer2 #product_our li{
        width:100%;
        padding:0%;
-       margin:0% 0%;
-       height: 25%;
+       margin:1% 0%;
 	}
 	
 	#footer2  #product_our a{
 		color:#132C55;
 		text-decoration:none;
 		cursor:pointer;
-		font-size:1.3em;
+		font-size:1.0em;
 		font-family: "Lato", sans-serif;
 	}
 	
 	#footer2 #product_our a:hover{
 		 margin:0% 0%;
 		 color:#7198E1;
-		 font-size: 1em;
+		 font-size:1.0em;
 		 font-family: "Lato", sans-serif;
 	}
 	
 	#footer2 #company p{
 		text-align:left;
-		height:100%;
+		height:10%;
 		width:100%;
-		padding:3%;
+		padding:5%;
 		color:#132C55;
-		font-size:1.2em;
+		font-size:1.0em;
 		font-family: "Lato", sans-serif;
-		margin:0% 0%;
 	}
 	
 	#footer2 #company p:hover{
 		 margin:0% 0%;
 		 color:#7198E1;
-		 font-size:1.2em;
-		 background: #fff;
+		 font-size:1.0em;
 	}
 	
 	#footer2 #info .widget-title {
-		font-size:2em;
+		font-size:1.5em;
 		text-decoration:none;
 		color:#132C55;
 		font-family: "Lato", sans-serif;
 	}
 
-    #footer2 #info .widget-title::after{
-        content: '';
-		display: block;
-		width: 35px;
-		height: 6px;
-		background: #fde428;
-		-webkit-border-radius: 3px;
-		-moz-border-radius: 3px;
-		-ms-border-radius: 3px;
-		border-radius: 3px;
-		margin: 4px 0 0;
-    }
-
     #footer2 #info .widget-title:hover{
 		color:#7198E1;
 		 font-family: "Lato", sans-serif;
-	}
-
-	#footer2 .textwidget{
-		height: 75%;
-		widows: 90%;
-		margin-top: 4%;
 	}
 
 	/************************************************/

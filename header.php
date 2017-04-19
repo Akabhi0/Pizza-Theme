@@ -6,16 +6,25 @@
   </head>
   
 <body>
-   <div id="header">
         <!--thih is the code part where we write the costimze code for logo-->
-	          
-     	<?php	if ( function_exists( 'the_custom_logo' ) ) {
+	 <div class="site-header" id="header" role="banner">     
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">   
+
+        <a class="navbar-brand" href="#">  
+     	       <?php	if ( function_exists( 'the_custom_logo' ) ) {
                 the_custom_logo();
-        } ?>
+             } ?> 
+        </a>
 
 	  <!--this is the frame work of two level drop down -->
-	  <div id="menu_level">
-	     <?php  wp_nav_menu(array("theme_location"=>"header-menu")); ?>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div  class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	    <ul class="nav navbar-nav">
+        <?php  wp_nav_menu(array("theme_location"=>"header-menu")); ?>
+      </ul>
 	  </div>
-	  
+
+      </div>
+	  </nav>
    </div>
