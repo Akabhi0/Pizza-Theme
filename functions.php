@@ -62,7 +62,7 @@
 		'before_widget' => '<li id="company">',
 		'after_widget'  => '</li>',
 		'before_title'  => '<a href="" class="widget-title">
-		                    <img src="http://localhost/wordpress/wp-content/uploads/2017/01/love-pointer.png">',
+		                    <img src="http://techtec.in/wp-content/uploads/2017/01/love-pointer.png">',
 		'after_title'   => '</a>',
 		) );
 		
@@ -73,7 +73,7 @@
 		'before_widget' => '<li id="partner">',
 		'after_widget'  => '</li>',
 		'before_title'  => '<div id="jquery_news"><a href=" " class="widget-title">
-		                    <img src="http://localhost/wordpress/wp-content/uploads/2017/01/handshake.png">',
+		                    <img src="http://techtec.in/wp-content/uploads/2017/01/handshake.png">',
 		'after_title'   => '</a></div>',
 	) );	
 	

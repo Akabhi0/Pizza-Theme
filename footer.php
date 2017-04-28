@@ -3,7 +3,7 @@
 	<li id="footer1">
            <center>
 		    <?php  if( is_active_sidebar( 'Footer-Sidebar-3' )): ?>
-		    <ul id="sidebar">
+		    <ul id="sidebar" class="container">
 			<?php dynamic_sidebar( "Footer-Sidebar-3" ); ?>
 			<?php endif; ?>				  
 	        </center>

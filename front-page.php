@@ -25,7 +25,7 @@
 					<?php } ?>
 					  <div class="carousel-caption">
 					  <h2><?php the_title(); ?></h2>
-					  <p><?php echo substr(get_the_excerpt(),0,250); ?></p>
+					  <p><?php echo substr(get_the_excerpt(),0,200); ?></p>
 					  </div>
 					</div>
 				    <?php endwhile; endif;  ?>	
